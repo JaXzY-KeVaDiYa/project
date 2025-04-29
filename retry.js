@@ -779,7 +779,7 @@ if (translateBtn) {
 // Mock translation function (replace with actual API call in production)
 async function translateText(text, sourceLang, targetLang) {
     try {
-      const response = await fetch('https://musical-system-5g57j75g747qfv49r-8000.app.github.dev/translate', {
+      const response = await fetch('http://localhost:8000/translate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
